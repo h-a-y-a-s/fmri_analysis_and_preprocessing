@@ -38,7 +38,7 @@ t_r = 1.4
 # Compute a matching brain mask
 brain_mask = masking.compute_brain_mask(func_img)
 
-# Call clean_img with the confounds dataframe the load_confounds returns
+# Call clean_img with the confounds dataframe that load_confounds returns
 clean_img = nimg.clean_img(func_img, confounds=confounds, detrend=True, standardize=True,
                            t_r=t_r, mask_img=brain_mask)
 
